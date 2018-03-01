@@ -1,4 +1,4 @@
-package fi.haagahelia.ohjtek.bookstore.web;
+package fi.haagahelia.ohte.bookstore.web;
 
 
 import java.util.List;
@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import fi.haagahelia.ohjtek.bookstore.domain.Book;
-import fi.haagahelia.ohjtek.bookstore.domain.BookRepository;
+import fi.haagahelia.ohte.bookstore.domain.Book;
+import fi.haagahelia.ohte.bookstore.domain.BookRepository;
 
 
 

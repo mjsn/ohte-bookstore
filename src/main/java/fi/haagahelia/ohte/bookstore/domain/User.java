@@ -1,4 +1,4 @@
-package fi.haagahelia.ohjtek.bookstore.domain;
+package fi.haagahelia.ohte.bookstore.domain;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

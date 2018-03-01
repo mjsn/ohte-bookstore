@@ -1,4 +1,4 @@
-package fi.haagahelia.ohjtek.bookstore.web;
+package fi.haagahelia.ohte.bookstore.web;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.authority.AuthorityUtils;
@@ -7,8 +7,8 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
-import fi.haagahelia.ohjtek.bookstore.domain.User;
-import fi.haagahelia.ohjtek.bookstore.domain.UserRepository;
+import fi.haagahelia.ohte.bookstore.domain.User;
+import fi.haagahelia.ohte.bookstore.domain.UserRepository;
 
 
 @Service
