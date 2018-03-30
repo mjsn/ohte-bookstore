@@ -7,9 +7,9 @@ import javax.persistence.Id;
 
 @Entity
 public class Book {
-    @Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
-    private Long id;
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	private Long id;
 	private String title;
 	private String author;
 	private int year;
@@ -26,7 +26,7 @@ public class Book {
 		this.isbn = isbn;
 		this.price = price;
 	}
-	
+
 	public Long getId() {
 		return id;
 	}
@@ -65,8 +65,7 @@ public class Book {
 	}
 	@Override
 	public String toString() {
-		return "Book [title=" + title + ", author=" + author + ", year=" + year + ", isbn=" + isbn + ", price=" + price
-				+ "]";
+		return "Book [title=" + title + ", author=" + author + ", year=" + year + ", isbn=" + isbn + ", price=" + price + "]";
 	}
 
 }

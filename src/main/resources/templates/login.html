@@ -1,35 +1,29 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Bookstore Login</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" th:href="@{css/bootstrap.min.css}" /> 
+	<title>Bookstore Login</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" th:href="@{css/bootstrap.min.css}" />
 </head>
 <body>
 	<div class="container">
 		<h1>Log in</h1>
-		
-	    <div th:if="${param.error}">
-	        Invalid username or password.
-	    </div>
-	    
-	    <div th:if="${param.logout}">
-	        You have been logged out.
-	    </div>
-	    
-	    <form th:action="@{/login}" method="post">
+
+		<div th:if="${param.error}">Invalid username or password.</div>
+
+		<div th:if="${param.logout}">You have been logged out.</div>
+
+		<form th:action="@{/login}" method="post">
 			<div class="form-group">
-		        <label>Username</label>
-		        <input class="form-control" type="text" name="username"/>
-		    </div>
-	        <div class="form-group">
-	        	<label>Password</label>
-	        	<input class="form-control" type="password" name="password"/>
-	        </div>
-	        <div class="form-group">
-	        	<input class="form-control btn btn-success" type="submit" value="Log in"/>
-	        </div>
-	    </form>
-    </div>
+				<label>Username</label> <input class="form-control" type="text" name="username" />
+			</div>
+			<div class="form-group">
+				<label>Password</label> <input class="form-control" type="password" name="password" />
+			</div>
+			<div class="form-group">
+				<input class="form-control btn btn-success" type="submit" value="Log in" />
+			</div>
+		</form>
+	</div>
 </body>
 </html>

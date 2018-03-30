@@ -8,18 +8,18 @@ import javax.persistence.Id;
 
 @Entity
 public class User {
-    @Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
-    @Column(name="id", nullable = false, updatable = false)
-    private Long id;
-    
-    @Column(name="username", nullable = false, unique = true)
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	@Column(name="id", nullable = false, updatable = false)
+	private Long id;
+
+	@Column(name="username", nullable = false, unique = true)
 	private String username;
-	
-    @Column(name="password", nullable = false)
-    private String passwordHash;
-    	
-    @Column(name="role", nullable = false)
+
+	@Column(name="password", nullable = false)
+	private String passwordHash;
+
+	@Column(name="role", nullable = false)
 	private String role;
 
 	private String email;
@@ -61,7 +61,7 @@ public class User {
 	public String getEmail() {
 		return email;
 	}
-	
+
 	public String getRole() {
 		return role;
 	}
@@ -76,8 +76,7 @@ public class User {
 
 	@Override
 	public String toString() {
-		return "User [id=" + id + ", username=" + username + ", password=" + passwordHash + ", email=" + email + ", role="
-				+ role + "]";
+		return "User [id=" + id + ", username=" + username + ", password=" + passwordHash + ", email=" + email + ", role=" + role + "]";
 	}
 
 }
